@@ -138,8 +138,20 @@ entity my_peripheral is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-	 LED_Data : out std_logic_vector(7 downto 0);
-	 DIP_Data : in std_logic_vector(7 downto 0);
+--DODATOOOO ========================
+	 clk_i          : in  std_logic;
+    reset_n_i      : in  std_logic;
+    -- vga
+    vga_hsync_o    : out std_logic;
+    vga_vsync_o    : out std_logic;
+    blank_o        : out std_logic;
+    pix_clock_o    : out std_logic;
+    psave_o        : out std_logic;
+    sync_o         : out std_logic;
+    red_o          : out std_logic_vector(7 downto 0);
+    green_o        : out std_logic_vector(7 downto 0);
+    blue_o         : out std_logic_vector(7 downto 0)
+--DODATOOOO IZNADD =================
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -304,8 +316,19 @@ begin
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
       --USER ports mapped here
-		LED_Data => LED_Data,
-		DIP_Data => DIP_Data,
+		clk_i          					 => clk_i,
+		reset_n_i      					 => reset_n_i,
+		-- vga
+		vga_hsync_o    					 => vga_hsync_o,
+		vga_vsync_o    					 => vga_vsync_o,
+		blank_o        					 => blank_o,
+		pix_clock_o    					 => pix_clock_o,
+		psave_o        					 => psave_o,
+		sync_o         					 => sync_o,
+		red_o          					 => red_o,
+		green_o        					 => green_o,
+		blue_o         					 => blue_o,
+		
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,
