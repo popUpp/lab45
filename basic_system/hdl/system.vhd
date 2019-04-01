@@ -1680,6 +1680,17 @@ architecture STRUCTURE of system is
       S_AXI_BRESP : out std_logic_vector(1 downto 0);
       S_AXI_BVALID : out std_logic;
       S_AXI_AWREADY : out std_logic;
+      clk_i : in std_logic;
+      reset_n_i : in std_logic;
+      vga_hsync_o : out std_logic;
+      vga_vsync_o : out std_logic;
+      blank_o : out std_logic;
+      pix_clock_o : out std_logic;
+      psave_o : out std_logic;
+      sync_o : out std_logic;
+      red_o : out std_logic_vector(7 downto 0);
+      green_o : out std_logic_vector(7 downto 0);
+      blue_o : out std_logic_vector(7 downto 0);
       DIP_Data : in std_logic_vector(7 downto 0);
       LED_Data : out std_logic_vector(7 downto 0)
     );
@@ -3517,6 +3528,17 @@ begin
       S_AXI_BRESP => axi4lite_0_M_BRESP(7 downto 6),
       S_AXI_BVALID => axi4lite_0_M_BVALID(3),
       S_AXI_AWREADY => axi4lite_0_M_AWREADY(3),
+      clk_i => net_gnd0,
+      reset_n_i => net_gnd0,
+      vga_hsync_o => open,
+      vga_vsync_o => open,
+      blank_o => open,
+      pix_clock_o => open,
+      psave_o => open,
+      sync_o => open,
+      red_o => open,
+      green_o => open,
+      blue_o => open,
       DIP_Data => DIP_Switches_TRI_I(0 to 7),
       LED_Data => my_peripheral_0_LED_Data(0 to 7)
     );

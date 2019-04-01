@@ -112,7 +112,7 @@ entity user_logic is
     sync_o         : out std_logic;
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
-    blue_o         : out std_logic_vector(7 downto 0)
+    blue_o         : out std_logic_vector(7 downto 0);
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 	
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -476,7 +476,7 @@ begin
   -- Example code to drive IP to Bus signals
   ------------------------------------------
   IP2Bus_Data(31 downto 8) <= (others=>'0');
-  IP2Bus_Data(7 downto 0) <= DIP_Data(7 downto 0);
+--  IP2Bus_Data(7 downto 0) <= DIP_Data(7 downto 0);
 
   IP2Bus_WrAck <= slv_write_ack;
   IP2Bus_RdAck <= slv_read_ack;

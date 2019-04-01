@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to D:\materija\ra194-2016\lab45\basic_system\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> 
@@ -429,32 +429,62 @@ Parsing entity <axi_lite_ipif>.
 Parsing architecture <imp> of entity <axi_lite_ipif>.
 Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" into library my_peripheral_v1_00_a
 Parsing entity <user_logic>.
-ERROR:HDLCompiler:806 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 120: Syntax error near "Bus2IP_Clk".
 Parsing architecture <IMP> of entity <user_logic>.
-ERROR:HDLCompiler:374 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 145: Entity <user_logic> is not yet compiled.
-ERROR:HDLCompiler:37 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 336: "clk_i" cannot be used in this expression.
-ERROR:HDLCompiler:37 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 337: "reset_n_i" cannot be used in this expression.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 437: <bus2ip_wrce> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 438: <bus2ip_rdce> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 439: <bus2ip_wrce> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 440: <bus2ip_rdce> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 454: <bus2ip_data> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 453: <bus2ip_be> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 447: <bus2ip_resetn> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 446: <bus2ip_clk> is not declared.
-ERROR:HDLCompiler:989 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 446: Attribute event requires a static signal prefix
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 443: <bus2ip_clk> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 478: <ip2bus_data> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 479: <ip2bus_data> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 481: <ip2bus_wrack> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 482: <ip2bus_rdack> is not declared.
-ERROR:HDLCompiler:69 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd" Line 483: <ip2bus_error> is not declared.
-VHDL file D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/user_logic.vhd ignored due to errors
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/my_peripheral.vhd" into library my_peripheral_v1_00_a
+Parsing entity <my_peripheral>.
+Parsing architecture <IMP> of entity <my_peripheral>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/char_rom.vhd" into library my_peripheral_v1_00_a
+Parsing entity <char_rom>.
+Parsing architecture <Behavioral> of entity <char_rom>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/graphics_mem.vhd" into library my_peripheral_v1_00_a
+Parsing entity <graphics_mem>.
+Parsing architecture <arc_graphics_mem> of entity <graphics_mem>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/text_mem.vhd" into library my_peripheral_v1_00_a
+Parsing entity <text_mem>.
+Parsing architecture <arc_text_mem> of entity <text_mem>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/vga.vhd" into library my_peripheral_v1_00_a
+Parsing entity <vga>.
+Parsing architecture <rtl> of entity <vga>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/vga_sync.vhd" into library my_peripheral_v1_00_a
+Parsing entity <vga_sync>.
+Parsing architecture <rtl> of entity <vga_sync>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/vga_top.vhd" into library my_peripheral_v1_00_a
+Parsing entity <vga_top>.
+Parsing architecture <rtl> of entity <vga_top>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/dcm25MHz.vhd" into library my_peripheral_v1_00_a
+Parsing entity <dcm25MHz>.
+Parsing architecture <xilinx> of entity <dcm25mhz>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/dcm50MHz.vhd" into library my_peripheral_v1_00_a
+Parsing entity <dcm50MHz>.
+Parsing architecture <xilinx> of entity <dcm50mhz>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/dcm75MHz.vhd" into library my_peripheral_v1_00_a
+Parsing entity <dcm75MHz>.
+Parsing architecture <xilinx> of entity <dcm75mhz>.
+Parsing VHDL file "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/dcm108MHz.vhd" into library my_peripheral_v1_00_a
+Parsing entity <dcm108MHz>.
+Parsing architecture <xilinx> of entity <dcm108mhz>.
+Parsing VHDL file "D:\materija\ra194-2016\lab45\basic_system\hdl\system_my_peripheral_0_wrapper.vhd" into library work
+Parsing entity <system_my_peripheral_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_my_peripheral_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_my_peripheral_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+ERROR:HDLCompiler:1156 - "D:\materija\ra194-2016\lab45\basic_system\hdl\system_my_peripheral_0_wrapper.vhd" Line 98: Formal port <DIP_Data> does not exist in entity <my_peripheral>.  Please compare the definition of block <my_peripheral> to its component declaration and its instantion to detect the mismatch.
+INFO:HDLCompiler:1408 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/my_peripheral.vhd" Line 114. my_peripheral is declared here
+ERROR:HDLCompiler:1156 - "D:\materija\ra194-2016\lab45\basic_system\hdl\system_my_peripheral_0_wrapper.vhd" Line 99: Formal port <LED_Data> does not exist in entity <my_peripheral>.  Please compare the definition of block <my_peripheral> to its component declaration and its instantion to detect the mismatch.
+INFO:HDLCompiler:1408 - "D:/materija/ra194-2016/lab45/basic_system/pcores/my_peripheral_v1_00_a/hdl/vhdl/my_peripheral.vhd" Line 114. my_peripheral is declared here
+
+Elaborating entity <my_peripheral> (architecture <IMP>) with generics from library <my_peripheral_v1_00_a>.
+Execution of entity my_peripheral failed
+Netlist system_my_peripheral_0_wrapper(STRUCTURE) remains a blackbox, due to errors in its contents
 --> 
 
-Total memory usage is 229620 kilobytes
+Total memory usage is 230964 kilobytes
 
-Number of errors   :   19 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

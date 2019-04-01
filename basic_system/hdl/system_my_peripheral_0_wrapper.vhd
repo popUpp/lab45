@@ -31,6 +31,17 @@ entity system_my_peripheral_0_wrapper is
     S_AXI_BRESP : out std_logic_vector(1 downto 0);
     S_AXI_BVALID : out std_logic;
     S_AXI_AWREADY : out std_logic;
+    clk_i : in std_logic;
+    reset_n_i : in std_logic;
+    vga_hsync_o : out std_logic;
+    vga_vsync_o : out std_logic;
+    blank_o : out std_logic;
+    pix_clock_o : out std_logic;
+    psave_o : out std_logic;
+    sync_o : out std_logic;
+    red_o : out std_logic_vector(7 downto 0);
+    green_o : out std_logic_vector(7 downto 0);
+    blue_o : out std_logic_vector(7 downto 0);
     DIP_Data : in std_logic_vector(7 downto 0);
     LED_Data : out std_logic_vector(7 downto 0)
   );
@@ -73,6 +84,17 @@ architecture STRUCTURE of system_my_peripheral_0_wrapper is
       S_AXI_BRESP : out std_logic_vector(1 downto 0);
       S_AXI_BVALID : out std_logic;
       S_AXI_AWREADY : out std_logic;
+      clk_i : in std_logic;
+      reset_n_i : in std_logic;
+      vga_hsync_o : out std_logic;
+      vga_vsync_o : out std_logic;
+      blank_o : out std_logic;
+      pix_clock_o : out std_logic;
+      psave_o : out std_logic;
+      sync_o : out std_logic;
+      red_o : out std_logic_vector(7 downto 0);
+      green_o : out std_logic_vector(7 downto 0);
+      blue_o : out std_logic_vector(7 downto 0);
       DIP_Data : in std_logic_vector(7 downto 0);
       LED_Data : out std_logic_vector(7 downto 0)
     );
@@ -115,6 +137,17 @@ begin
       S_AXI_BRESP => S_AXI_BRESP,
       S_AXI_BVALID => S_AXI_BVALID,
       S_AXI_AWREADY => S_AXI_AWREADY,
+      clk_i => clk_i,
+      reset_n_i => reset_n_i,
+      vga_hsync_o => vga_hsync_o,
+      vga_vsync_o => vga_vsync_o,
+      blank_o => blank_o,
+      pix_clock_o => pix_clock_o,
+      psave_o => psave_o,
+      sync_o => sync_o,
+      red_o => red_o,
+      green_o => green_o,
+      blue_o => blue_o,
       DIP_Data => DIP_Data,
       LED_Data => LED_Data
     );

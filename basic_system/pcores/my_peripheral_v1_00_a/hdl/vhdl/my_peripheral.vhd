@@ -150,7 +150,7 @@ entity my_peripheral is
     sync_o         : out std_logic;
     red_o          : out std_logic_vector(7 downto 0);
     green_o        : out std_logic_vector(7 downto 0);
-    blue_o         : out std_logic_vector(7 downto 0)
+    blue_o         : out std_logic_vector(7 downto 0);
 --DODATOOOO IZNADD =================
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
